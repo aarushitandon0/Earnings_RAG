@@ -193,7 +193,7 @@ The LLM generates a final answer using only the verified chunks as context. It i
 
 ##  Dataset
 
-**Source:** [NASDAQ Earnings Call Transcripts 2016–2020](https://www.kaggle.com/) — Thomson Reuters StreetEvents
+**Source:** [NASDAQ Earnings Call Transcripts 2016–2020](https://www.kaggle.com/datasets/ashwinm500/earnings-call-transcripts/data) — Thomson Reuters StreetEvents
 
 | Property | Detail |
 |---|---|
