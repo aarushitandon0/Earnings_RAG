@@ -65,13 +65,13 @@ EarningsIQ fixes all four with dedicated pipeline stages.
 
 ```
                         ┌────────────────────┐
-                        │    User Question    │
+                        │    User Question   │
                         └────────┬───────────┘
                                  │
                                  ▼
                ┌─────────────────────────────────┐
                │         STAGE 1                 │
-               │       Query Rewriter             │
+               │       Query Rewriter            │
                │      (Groq LLaMA3 70B)          │
                │                                 │
                │  "how is Apple doing?"          │
@@ -87,18 +87,18 @@ EarningsIQ fixes all four with dedicated pipeline stages.
                │         STAGE 2                 │
                │      Hybrid Retrieval           │
                │                                 │
-               │  ┌─────────────┐               │
+               │  ┌─────────────┐                │
                │  │ Vector Search│  60% weight   │
-               │  │  (ChromaDB) │               │
-               │  └──────┬──────┘               │
+               │  │  (ChromaDB) │                │
+               │  └──────┬──────┘                │
                │         │    ╲                  │
                │         │     ╲  Combined       │
                │         │      ╲ Hybrid Score   │
                │         │     ╱                 │
-               │  ┌──────┴──────┐               │
-               │  │ BM25 Search │  40% weight   │
-               │  │  (keyword)  │               │
-               │  └─────────────┘               │
+               │  ┌──────┴──────┐                │
+               │  │ BM25 Search │  40% weight    │
+               │  │  (keyword)  │                │
+               │  └─────────────┘                │
                │                                 │
                │       → Top 20 chunks           │
                └─────────────┬───────────────────┘
@@ -145,7 +145,7 @@ EarningsIQ fixes all four with dedicated pipeline stages.
                              │
                              ▼
                ┌─────────────────────────────────┐
-               │  Final Answer + Source Citations │
+               │ Final Answer + Source Citations │
                │  + CRAG Status (PASSED /        │
                │    CORRECTED)                   │
                └─────────────────────────────────┘
