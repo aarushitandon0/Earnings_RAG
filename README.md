@@ -1,4 +1,4 @@
-# 💹 EarningsIQ
+#  EarningsIQ
 ### Intelligent Financial Analysis Powered by Advanced RAG
 
 > Ask natural language questions across 190 NASDAQ earnings call transcripts (2016–2020) and get precise, cited answers — powered by a 5-stage retrieval pipeline that goes far beyond basic RAG.
